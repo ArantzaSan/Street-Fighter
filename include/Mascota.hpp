@@ -8,20 +8,20 @@ private:
 
 public:
     Mascota(std::string nombre) {
-        this ->hambre = 0;
-        this ->nombre = nombre;
+        this->hambre = 0;
+        this->nombre = nombre;
     }
     ~Mascota() {}
-    void jugar(){
-        this ->hambre += s;
+    void Jugar(){
+        this->hambre += 5;
     }
-    void comer(int comida){
-        this ->hambre -=comida
+    void Comer(int comida){
+        this->hambre -=comida;
     }
     std::string DecirNombre(){
-        return this ->nombre;
+        return this->nombre;
     }
     int DecirHambre(){
-        return this ->hambre;
+        return this->hambre;
     }
-}
+};
