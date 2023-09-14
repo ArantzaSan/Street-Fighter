@@ -1,5 +1,6 @@
 #include <iostream>
 #include <Mascota.hpp>
+#include <Jugador.hpp>
 
 int main( int argc, char const *argv[])
 {
