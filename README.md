@@ -1,3 +1,5 @@
+# Arantza Lia Sanchez Orozco 22310161
+# Aldo Misael Osuna Rodríguez 22310221
 # Street-Fighter
 
 ## Jugadores
