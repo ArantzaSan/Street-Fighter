@@ -146,8 +146,8 @@ int main()
     sf::Text text2;
     text2.setFont(font2);
     text2.setString("STREET FIGHTER!");
-    text2.setCharacterSize(50);
-    text2.setPosition(200, 100);
+    text2.setCharacterSize(90);
+    text2.setPosition(110, 100);
 
     sf::RenderWindow window(sf::VideoMode(800, 600), "Street Fighter");
 
