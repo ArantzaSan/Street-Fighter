@@ -116,6 +116,15 @@ double velocidad = 0.1;
 
 int main()
 {
+    sf::Texture texture;
+    if (!texture.loadFromFile("./assets/images/fondo.png"))
+    {
+        // Manejar el error si no se puede cargar la imagen
+        return -1;
+    }
+     // Crear un sprite y asignarle la textura
+    sf::Sprite sprite(texture);
+
     sf::Music music;
     if (!music.openFromFile("./assets/music/sF.ogg"))
     {
@@ -125,6 +134,20 @@ int main()
 
     // Reproducir la música
     music.play();
+
+    // Cargar una fuente de texto
+    sf::Font font2;
+    if (!font2.loadFromFile("./assets/fonts/Sf.ttf"))
+    {
+        // Manejar el error si no se puede cargar la fuente
+        return -1;
+    }
+    // Crear un objeto de texto LOTR
+    sf::Text text2;
+    text2.setFont(font2);
+    text2.setString("STREET FIGHTER!");
+    text2.setCharacterSize(50);
+    text2.setPosition(200, 100);
 
     sf::RenderWindow window(sf::VideoMode(800, 600), "Street Fighter");
 
@@ -186,8 +209,10 @@ int main()
         pikachu.update();
 
         window.clear();
+        window.draw(sprite);
         pika.draw(window);
         pikachu.draw(window);
+        window.draw(text2);
         window.display();
 
         if (music.getStatus() != sf::Music::Playing)
