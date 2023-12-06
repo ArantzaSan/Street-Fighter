@@ -15,7 +15,7 @@ int main()
 
     // Crear un sprite y asignarle la textura
     sf::Sprite sprite(texture);
-    sprite.setPosition(400, 300);
+    sprite.setPosition(200, 300);
 
     sf::Clock clock;
     float frameTime = 0.1f; // Tiempo entre cada frame en segundos

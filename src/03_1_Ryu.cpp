@@ -18,6 +18,7 @@ public:
         {
         
         }
+        
         this->sprite = sf::Sprite(texture);
         this->sprite.setPosition(position); // Posición inicial sprite
     }
@@ -61,7 +62,7 @@ double velocidad = 0.1;
 int main()
 {
     sf::Music music;
-    if (!music.openFromFile("./assets/music/chulo.ogg"))
+    if (!music.openFromFile("./assets/music/sF.ogg"))
     {
         // Error al cargar el archivo de música
         return -1;
